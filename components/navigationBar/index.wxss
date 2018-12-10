@@ -17,6 +17,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  font-size: 19px;
 }
 .icon-fanhui{
   display: inline-block;
@@ -41,7 +42,7 @@
   font-size: 30rpx;
 }
 .title{
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .navigation-bar-holder{
   background: transparent;

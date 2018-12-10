@@ -4,9 +4,9 @@ Page({
    */
   data: {
     title: '子页面',
-    barBg: '#ff6600',
+    barBg: '#fff',
     fixed: true,
-    color: '#ffffff',
+    color: '#000',
     touchStartY: 0,//触摸开始的Y坐标
     toggleBarShow: false,
   },

@@ -6,9 +6,9 @@
   "window":{
     "navigationStyle": "custom",
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "white",
     "navigationBarTitleText": "自定义导航栏",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"black"
   },
   "debug": true
 }
