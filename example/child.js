@@ -9,6 +9,8 @@ Page({
     color: '#000',
     touchStartY: 0,//触摸开始的Y坐标
     toggleBarShow: false,
+    useslot: false,
+    scrollValue: 0
   },
   onLoad: function (options) {
     console.log(options);
@@ -23,6 +25,11 @@ Page({
     if(options.toggleBarShow){
       obj.toggleBarShow = true;
     }
+    if(options.useslot){
+      obj.useslot = true;
+      obj.title = 'none';
+    }
+
     this.setData(obj);
   },
   /**
@@ -47,13 +54,18 @@ Page({
       this.selectComponent("#navigationBar").toggleHide();
     }
   },
-  onPageScroll(e){
-    // console.log(e.scrollTop, e.scrollTop - this.data.touchStartY);
-   if (e.scrollTop < 10) {//判断向上滚动顶部
-      // this.setData({ touchStartY: e.scrollTop });
-      this.selectComponent("#navigationBar").toggleShow();
-    }
+  // onPageScroll(e){
+  //   // console.log(e.scrollTop, e.scrollTop - this.data.touchStartY);
+  //  if (e.scrollTop < 10) {//判断向上滚动顶部
+  //     // this.setData({ touchStartY: e.scrollTop });
+  //     this.selectComponent("#navigationBar").toggleShow();
+  //   }
 
+  // },
+  onScroll(e) {
+    this.setData({
+      scrollValue : e.detail.scrollTop
+    })
   },
   onShareAppMessage(res){
     return {

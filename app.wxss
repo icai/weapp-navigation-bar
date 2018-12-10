@@ -1,4 +1,12 @@
 /**app.wxss**/
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+
 #container {
   position: relative;
   width: 100%;

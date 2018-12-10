@@ -1,6 +1,33 @@
-<view>
-  <navigationBar id="navigationBar" placeholderBg="" color="{{color}}" title="{{title}}" back="{{true}}" background="{{barBg}}" fixed="{{fixed}}"></navigationBar>
-  <view id="container" bindtouchstart='touchstart' bindtouchmove='touchmove' style='height:200vh;'>
-  	<view style="position:absolute;top:0;left:0;">页面容器</view>
-  </view>
+<view class="container">
+  <navigationBar id="navigationBar" placeholderBg="" color="{{color}}" title="{{title}}" back="{{true}}" background="{{barBg}}" fixed="{{fixed}}">
+    <view wx:if="{{useslot}}">
+        这是自定义容器
+    </view>
+  </navigationBar>
+  <scroll-view upper-threshold="50" lower-threshold="50" 
+  bindscroll='onScroll' scroll-y="true" style="display:flex; flex:1;width:100%; height: 100vh;">
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: rgb(92, 160, 29);">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: rgb(26, 185, 124);">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: rgb(92, 160, 29);">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    {{scrollValue}}
+    <view style="height:200rpx;width: 100%; background: rgb(26, 185, 124);">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: rgb(92, 160, 29);">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: rgb(26, 185, 124);">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    {{scrollValue}}
+    <view style="height:200rpx;width: 100%; background: rgb(92, 160, 29);">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: rgb(26, 185, 124);">页面容器</view>
+    {{scrollValue}}
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: rgb(92, 160, 29);">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: #ec2;">页面容器</view>
+    <view style="height:200rpx;width: 100%; background: rgb(26, 185, 124);">页面容器</view>
+  </scroll-view>
 </view>
