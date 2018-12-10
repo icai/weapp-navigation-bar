@@ -8,21 +8,10 @@
 4. 更多请[查看组件更新内容](https://github.com/mulook/weapp-navigation-bar/blob/master/CHANGELOG.md)
 
 ## 演示
-1 自定义导航栏
 
-   <img widt="375" src="https://raw.githubusercontent.com/mulook/weapp-navigation-bar/master/assets/example1.gif">
+[https://developers.weixin.qq.com/s/KvSeSymX754x](https://developers.weixin.qq.com/s/KvSeSymX754x)
 
-2 模拟非首页启动小程序
 
-   <img widt="375" src="https://raw.githubusercontent.com/mulook/weapp-navigation-bar/master/assets/example2.gif">
-
-3 设置导航栏跟随页面滚动
-
-   <img widt="375" src="https://raw.githubusercontent.com/mulook/weapp-navigation-bar/master/assets/example3.gif">
-
-4 页面上下滚动指定像素值，切换导航栏的显示或隐藏
-
-   <img widt="375" src="https://raw.githubusercontent.com/mulook/weapp-navigation-bar/master/assets/example4.gif">
    
 ## 使用说明
 使用前需要了解[小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/)和[自定义导航栏](https://developers.weixin.qq.com/miniprogram/dev/framework/config.html#window)。
@@ -31,9 +20,9 @@ app.json配置以下属性
 "window":{
     "navigationStyle": "custom",
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "white",
     "navigationBarTitleText": "自定义导航栏",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"black"
   }
 ```
 如果已了解，可直接把组件拷贝到项目里引用，用法可参考example。
@@ -51,3 +40,7 @@ app.json配置以下属性
 | placeholderBg | 导航栏占位栏背景色          | String  | transparent |
 | back          | 是否显示导航栏返回按钮      | Boolean | false       |
 | fixed         | 导航栏是否fixed定位置顶     | Boolean | true        |
+
+## slot
+
+title slot
